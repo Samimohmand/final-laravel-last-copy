@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    header{
+        font-size: 3em;
+        text-align: center;
+        line-height: 70px;
+        height: 70px;
+        border: 1px solid black;
+    }
+    /* .........................
+   
+    .............................*/
+    #prodeuct-container{
+        width: 100%;
+        padding: 1em 1em;
+        display: flex;
+    }
+    #prodeuct-container #product-image{
+        width: 60%;
+        margin-right: 3em;
+    }
+    #prodeuct-container #product-image img{
+        width: 100%;
+    }
+    #prodeuct-container #product-card{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-align: stretch;
+    }
+    #prodeuct-container #product-card #product-para{
+        font-size: 1.5em;
+        text-transform: capitalize;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+    #prodeuct-container #product-card #pss{
+        display: block;
+        background-color: red;
+        padding: 3px 5px;
+        width: 44px;
+        height: 22px;
+        color: white;
+        font-size: 0.85em;
+        border-radius: 3px;
+        margin: 14px 0;
+    }
+    #prodeuct-container #product-card #product-rate{
+        font-size: 1.8em;
+        font-weight: 600;
+        
+    }
+    #transit-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 0 40px 0;
+    }
+    
+    #prodeuct-container #product-card #transit-div img{
+        width: 25px;
+        height: 25px;
+        border-radius: 4px;
+        margin-right: 5px;
+    }
+    #prodeuct-container #product-card #transit-div #product-para-massage{
+        font-size: 0.8em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    #prodeuct-container #product-card #beying-div{
+        width: 100%;
+
+    }
+    #prodeuct-container #product-card #beying-div #product-quantity{
+        width: 15%;
+        padding: 15px 20px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    #prodeuct-container #product-card #beying-div button{
+        width: 60%;
+        padding: 11px 15px;
+        font-size: 1.3em;
+        background-color: black;
+        color: white;
+    }
+
+    #my-footer{
+  width: 100%;
+ 
+  
+  background-color: #31f48f;
+
+}
+#footer-wraper {
+  padding: 0 80px 30px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+#my-footer .clumn{
+ min-width: 200px;
+}
+#my-footer .clumn h4 {
+  color: black;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#my-footer .clumn p {
+  color: black;
+  padding-bottom: 5px;
+}
+
+#my-footer .clumn strong {
+  color: black;
+  padding-right: 10px;
+}
+
+#follwers {
+  color: red;
+  padding-bottom: 5px;
+}
+
+#socialink-i {
+  padding-right: 5px;
+  color:red;
+}
+
+#about-links a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+#about-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-border img {
+  border: 1px solid #088178;
+  border-radius: 4px;
+}
+.my-border{
+color: black;
+}
+.my-border i{
+padding-right: 10px;
+padding-top: 8px;
+color: red;
+}
+
+.clumn a:hover {
+  color: #088178;
+}
+
+.clumn p {
+  color: black;
+  margin: 5px 0;
+}
+
+#copyright-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#copyright-wraper p {
+  color: rgb(78, 76, 76);
+}
+/* ------------------------end of home section  */
+.navbar-center2 {
+  display: none;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar{
+    padding: 15px 3%;
+    }
+  .navbar-center ul li a{
+    font-size: 0.85em;
+    padding-right: 0px;
+
+    }
+    .logo img {
+      margin-right: 0px;
+    }
+    #text-body{
+      font-size: 1.6em;
+    }
+    #footer-wraper {
+      padding: 1em 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #my-footer .clumn{
+      min-width: 250px;
+      margin-right: 1em;
+     }
+}
+@media screen and (max-width: 600px) {
+  .navbar-center2 {
+    display: flex;
+    justify-content: center;
+    margin-right: -130px;
+
+  }
+  .dropdown-btn {
+
+  }
+  .navbar-center{
+    display: none;
+  }
+}
+
+    @media screen and (max-width: 900px) {
+            #prodeuct-container #product-card #product-para{
+            font-size: 1.4em;
+            margin-bottom: 0.5em;
+        }
+        #prodeuct-container #product-card #product-rate{
+        font-size: 1.4em;
+        font-weight: 600;
+         }
+         #transit-div {
+        margin: 15px 0 30px 0;
+    }
+    }
+    @media screen and (max-width: 700px) {
+       #prodeuct-container{
+        width: 100%;
+        padding: 1em 1em;
+        display: flex;
+        flex-direction: column;
+        }
+        #prodeuct-container #product-image{
+        width: 100%;
+        margin-right: 3em;
+        }
+        #prodeuct-container #product-card{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-align: stretch;
+    }
+
+        #prodeuct-container #product-card #product-para{
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
+            
+        }
+    }
+
+
+
+
+
+    /* ================================start of navbar ============================== */
+    .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    padding: 10px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  .logo img{
+    width: 30px;
+    margin-right: 15px;
+    display: block;
+  
+  }
+  
+  .navbar-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .navbar-right ul li{
+    padding:0 8px;
+  }
+  
+  .bell-icon a img ,.message-icon a img{
+    width: 23px;
+    height: 23px;
+  }
+  .bell-icon a img:hover ,.message-icon a img:hover{
+    box-shadow: 0 0 10px rgba(165, 219, 216, 0.945);
+    transform: scale(1.2);
+    border-radius: 50%;
+  }
+  .navbar-center ul li {
+        display: inline-block;
+        list-style-type: none;
+  }
+  .navbar-center ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin:5px 8px;
+    padding-right: 5px;
+    position: relative;
+  
+  }
+  
+  
+  
+  .navbar-center ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    /* background:#045be6 ; */
+    background: #3cd6ab;
+    position: absolute;
+    bottom: -15px;
+    transition: width 0.3s;
+  }
+  .navbar-center ul li a:hover::after{
+    width: 100%;
+  }
+  
+  
+  a{
+    text-decoration: none;
+  }
+  .nav-profile-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+  
+  }
+  .online{
+    position: relative;
+  }
+  .online::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
+    background:#41db51;
+    position: absolute;
+  
+  }
+  .search-box{
+    background-color: #f0f2f5;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+  
+  }
+  .navbar-left{
+    display: flex;
+    align-items: center
+  }
+  .search-box img{
+    width: 14px;
+  }
+  .search-box input{
+    width: 100%;
+    background-color: transparent;
+    padding: 8px;
+    outline: none;
+    border: none;
+  }
+    /* =========================end of navabar  ====================================================*/
+
+    </style>
+</head>
+<body>
+    <nav  class="navbar">
+        <div class="navbar-left"> 
+           
+           
+        </div>
+        <div class="navbar-center">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./our project design the product part/product-page.html">Shop product</a></li>
+            <li><a href="job.html"></a></li>
+            <li><a href="/idea part/homepageidea.html">Get idea</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="../Final_project In the Last Edite/profile.html">Admin</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        </div>
+        <div class="navbar-right">
+         
+            <ul>
+                <li class="message-icon"><a href=""><img src="./icons/icons8-message.gif" alt=""></a></li>
+               
+                <li  class="bell-icon"><a href=""><img src="./icons/bell.png" alt=""></a></li>
+                <li  class="online"><a href=""><img src="./icons/istockphoto-1309328823-1024x1024.jpg" alt="" class="nav-profile-img"></a></li>
+            </ul>
+    
+            
+         
+        </div>
+    </nav>
+    
+    <!-- =====================end of navbar========================== -->
+    <div id="prodeuct-container">
+
+        <div id="product-image">
+            <img src="4.jpg.jpg" alt="product image" >
+        </div>
+
+        <div id="product-card">
+            <p id="product-para">best choose for buying foods table</p>
+            <span id="pss">SALE</span>
+            <span id="product-rate"> &#36  234</span>
+            
+            <div id="transit-div">
+                <img src="car-icon.png" alt="car icon ">
+                <p id="product-para-massage">  This product will be sent to you as soon as possible.</p>
+
+            </div>
+            
+            <div id="beying-div">
+                <label for="product-quantity"> Qty : </label>
+                <select id="product-quantity" name="productQuantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                </select>
+                <button>Add to Card</button>
+                
+            </div>
+          
+        </div>
+    </div>
+    <footer id="my-footer">
+      <div id="footer-wraper">
+          <div class="clumn">
+            
+              <h4>About company</h4>
+              <p><strong>construction</strong></p>
+
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Lorem ipsum dolor sit, amet consectetur<br>
+                  Praesentium eveniet dolore culcupiditate<br>
+              </p>
+              <div id="follwers" class="clumn">
+                  <h4>folow as</h4>
+                  <div id="socialink">
+                      <i class="fab  fa-facebook-f"></i>
+                      <i class="fab  fa-twitter"></i>
+                      <i class="fab  fa-instagram"></i>
+                      <i class="fab  fa-pinterest-p"></i>
+                      <i class="fab  fa-youtube"></i>
+                  </div>
+              </div>
+          </div>
+
+          <div class="clumn">
+              <h4>explore links</h4>
+              <div id="about-links">
+                  <a href="">about</a>
+                  <a href="">project info</a>
+                  <a href="">privacy polcy</a>
+                  <a href="">term and condition </a>
+                  <a href="">contact us</a>
+                  <a href="">our team</a>
+                  <a href="">our service</a>
+                  <a href="">site mape</a>
+                  <a href="">help center</a>
+              </div>
+          </div>
+
+
+          <div class="clumn">
+              <h4>latest post</h4>
+              <div id="about-links">
+                  <a href="">call me</a>
+                  <a href="">sing in </a>
+                  <a href="">file upload</a>
+                  <a href="">my prject list</a>
+                  <a href="">track my order </a>
+                  <a href="">help</a>
+              </div>
+          </div>
+
+          <div class="clumn my-border">
+              <h4>Contact Us</h4>
+              <p>join to our website</p>
+              <i class="fas fa-map-marker-alt"></i>afghanistan 2th strate <br>
+              <i class="fab fa-google"></i>mohammadi@gmail.com <br>
+              <i class="fas fa-phone"></i>+93795872861 <br>
+          </div>
+
+      </div>
+      <div id="copyright-wraper">
+          <p>&copy;create and design your archtecture</p>
+      </div>
+  </footer>
+
+</body>
+</html>

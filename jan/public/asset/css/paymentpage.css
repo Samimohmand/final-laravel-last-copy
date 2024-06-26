@@ -1,0 +1,439 @@
+
+#all-section{
+    width:100%;
+    padding:1em;
+    
+}
+#slider-container{
+        margin-left: 4rem;
+    }
+    
+#featured{
+  width: 98%; 
+  height: 60vh;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid black;
+ 
+}
+
+.thumbnail{
+    object-fit: cover;
+    max-width: 180px;
+    max-height: 100px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+    border: 2px solid black;
+}
+.thumbnail:hover{
+    opacity: 1;
+}
+.active{
+    opacity: 1;
+}
+#slider-wrapper{
+    max-width: 700px;
+    display: flex;
+    min-height: 100px;
+    align-items: center;
+
+}
+#slider{
+    width: 440px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x:hidden ;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow:hover{
+    opacity: .5;
+    width: 35px;
+    height: 35px;
+    
+}
+
+/* =========================profile */
+
+#profile-container{
+display: inline-block;
+width: 100%;
+padding: 1em 0 1em 5em;
+}
+
+#profile-container h1{
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: left;
+  margin: 2rem 0 0.8em 0;
+  font-weight: 600;   
+}
+.image-profile-name{
+  display: flex;
+  padding: 5px 0;
+  
+
+}
+#profile-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.image-profile-name h4{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+ #main-container{
+    display: flex;
+    width: 100%;    
+} 
+/* ==============payment cart */
+#left-side-content{
+width: 60%;
+padding: 1em;
+}
+
+
+
+#right-side-content{
+  width: 40%;
+  padding: 1em;
+  }
+
+
+
+/* coment part of -=============================== */
+
+    
+  
+  /* =============================reviesw  part */
+
+  .review-section {
+    margin:3em 0 2em;
+  }
+  .review-section .container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+    
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+.container h1{
+    margin-bottom: 1rem;
+    font-family: 'dosis';
+    font-size: 25px;
+    text-align: center;
+}
+.wrapper{
+    width: 300%;
+    /* 300% 'caz we have 3 cards */
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.card{
+    width:100%;
+    /* min-height: 100%; */
+    height: 30vh;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;  
+    padding: 15px;
+    margin: 0 10px;
+}
+
+.card-thumb{
+    width: 30%;
+    min-width: 100px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+}
+
+.client-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    width: 100%;
+    margin-left: 15px;
+    height: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 50px; */
+}
+
+.card-body .review{
+    font-size: 1em;
+    line-height: 25px;
+    margin-top: 10px;
+   
+}
+ /* satr rating  */
+ .star-rating {
+  font-size: 24px; /* Adjust as needed */
+  color: #FFD700; /* Default color for filled stars */
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.star {
+  display: inline-block;
+/* Space between stars */
+  color: #ccc; /* Default color for empty stars */
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #FFD700; /* Change color on hover */
+}
+
+.star-rating[data-rating="1"] .star:nth-child(-n+1),
+.star-rating[data-rating="2"] .star:nth-child(-n+2),
+.star-rating[data-rating="3"] .star:nth-child(-n+3),
+.star-rating[data-rating="4"] .star:nth-child(-n+4),
+.star-rating[data-rating="5"] .star:nth-child(-n+5) {
+  color: #FFD700; /* Filled stars based on data-rating */
+}
+
+
+.indicators{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* ===========================about gig ===============*/
+
+#about-gig{
+    width: 100%;
+    padding: 0 0.5em;
+}
+#about-gig h1 {
+    font-size: 25px;
+    font-weight: 600;
+   text-align: start;
+   margin-left: 3rem;
+    
+   
+}
+#about-gig p{
+    text-align: start;
+    font-size: 18px;
+    margin-left: 3rem;
+    padding-top: 5px;
+}
+/********* waiting section ************/
+#waiting-section {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: 3em;
+  border-top: 1px solid gray;
+  
+}
+#waiting-section h2{
+  font-size: 1.5em;
+
+}
+#waiting-section .waiting-div{
+width: 100%;
+margin-top: 3em;
+color: rgb(69, 69, 69);
+}
+#waiting-section .waiting-div u{
+  font-size: 1.3em;
+  display: inline-block;
+  background-color: #ffecd1;
+  margin: 0.8em 0 ;
+}
+#waiting-section .waiting-div ul{
+  list-style-position: inside;
+}
+#waiting-section .waiting-div ul li{
+  font-size: 1.1em;
+  margin-bottom: 0.3em;
+}
+#right-side-content{
+  width: 40%;
+  padding: 0.5em;
+  position: relative;
+}
+/*================================================================*/
+/**********************right-side-content*************************/
+/*================================================================*/
+
+
+/* ==========price section======= */
+
+ 
+#price-section{
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 0;
+  }
+  #price-section .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  #price-section .pricing  .plan {
+      background-color: #fff;
+      border:1.5px solid #6ab04c;;
+      width: 100%;
+      padding: 4em 2rem;
+      margin: 12px;
+      border-radius: 5px;
+      text-align: center;
+      transition: 0.3s;
+      cursor: pointer;
+      h2 {
+        font-size: 29px;
+        margin-bottom: 12px;
+        color: black;
+      }
+  
+        .price {
+        margin: 1rem  0 2em;
+        font-size: 30px;
+        font-weight: 600;
+
+        
+      }
+      
+      ul.features {
+        list-style-type: none;
+        text-align: left;
+        li {
+          margin: 8px;
+          .fas {
+            margin-right: 4px;
+          }
+          .fa-check-circle {
+            color: #6ab04c;
+
+          }
+          .fa-times-circle {
+            color: #eb4d4b;
+          }
+        }
+      }
+  
+      button {
+        border: none;
+        width: 96%;
+        padding: 12px 20px;
+        margin-top:2em;
+        background-color: #31f48f;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+  
+      .popular {
+        border: 2px solid #6ab04c;
+        position: relative;
+        transform: scale(1.08);
+  
+        span {
+          transform: translateX(-50%);
+          background-color: #6ab04c;
+          color: #fff;
+          padding:0 ;
+          font-size: 18px;
+          border-radius: 5px;
+        }
+      }
+      
+    
+    }
+    #price-section .pricing  .plan:hover {
+      box-shadow: 0 0 5px green;
+    }
+
+    @media screen and (max-width: 910px) {
+      #profile-container h1{
+        font-size: 2em;
+        margin: 2rem 0 0.8em 0;
+        font-weight: 600;   
+      }
+      #main-container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+      #right-side-content{
+        width: 60%;
+        margin: auto;
+        padding: 1em;
+      }
+      #left-side-content{
+        width: 100%;
+        margin: auto;
+      }
+      #wiating-container{
+        display: flex;
+        flex-direction: row;
+      }
+      #waiting-section .waiting-div{
+        width: 35%;
+        margin-top: 3em;
+        margin-right: 1em;
+        color: rgb(69, 69, 69);
+        }
+        #waiting-section .waiting-div u{
+          font-size: 1.1em;
+          margin: 0.6em 0 ;
+        }
+      
+        #waiting-section .waiting-div ul li{
+          font-size: 1em;
+        }
+
+  }
+@media screen and (max-width: 590px) {
+  #profile-container h1{
+    font-size: 1.8em;
+    margin: 1.7rem 0 0.6em 0;
+    font-weight: 600;   
+  }
+  .card{
+    height: 35vh;
+    padding: 10px;
+  }
+  #right-side-content{
+    width: 80%;
+    margin: auto;
+    padding: 1em;
+  }
+  
+}
+
+
+
+
